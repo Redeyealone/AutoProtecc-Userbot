@@ -56,8 +56,8 @@ def get_data(img):
 @waifu.on_message(
     filters.photo
     & filters.chat(CHATS)
-    & filters.user(users=[792028928, 1232515770, 1964681186])
-)
+    & filters.user(users=[5483829443, 5483829443)]
+            
 async def autoprotecc(_, message: Message):
     path = await waifu.download_media(message, file_name="waifu.jpg")
     print("Now working.")
